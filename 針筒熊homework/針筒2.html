@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bo {
+            width: 500px;
+            height: 70px;
+            box-shadow: 50 50 30px 30px rgba(53, 50, 50, 0.5);
+            background: linear-gradient(90deg, rgb(238, 235, 235), rgb(226, 220, 134));
+            border: 1px solid rgb(192, 189, 189);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            /* position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); */
+        }
+
+        .bo2 {
+            width: 30px;
+            height: 50px;
+            background: linear-gradient(#fff, rgb(201, 201, 201)65%, #fff);
+            position: absolute;
+            top: 0;
+            right: 530px;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            border: 1px solid rgb(192, 189, 189);
+        }
+
+        .bo2::before {
+            content: "";
+            width: 35px;
+            height: 80px;
+            position: absolute;
+            top: -15px;
+            left: -35px;
+            border-radius: 12%;
+            border: 1px solid rgb(192, 189, 189);
+            background: linear-gradient(#fff, rgb(201, 201, 201)65%, #fff);
+
+        }
+
+        .bo2::after {
+            content: "";
+            width: 70px;
+            height: 0px;
+            position: absolute;
+            border: 1px solid rgb(168, 167, 167);
+            left: 567px;
+            top: 20px;
+        }
+
+
+        .bo::before {
+            content: "";
+            width: 35px;
+            height: 70px;
+            background: black;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+
+        }
+
+        .bo::after {
+            content: "";
+            width: 35px;
+            height: 50px;
+            background: linear-gradient(#fff, rgb(201, 201, 201)65%, #fff);
+            position: absolute;
+            border-radius: 12%;
+            border: 1px solid black;
+            border: 0.1cm solid rgb(192, 189, 189);
+            border-width: 0.5px;
+            top: 8px;
+            right: 0;
+            left: 500px;
+        }
+
+        .boo {
+            width: 500px;
+            height: 8px;
+            background: repeating-linear-gradient(90deg, hsl(0, 11%, 86%), rgb(180, 179, 179) 2px, transparent 0, transparent 0.3cm);
+            background-size: 10px 5px;
+        }
+
+        .boo::before {
+            width: 30px;
+            height: 100px;
+            background: black;
+            border: 2px solid blue;
+            margin: auto;
+            position: absolute;
+            left: 300px;
+
+        }
+
+        .text {
+            position: absolute;
+            top: 38px;
+            color: rgb(134, 129, 129);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bo">
+        <p class=text> Made in taiwan</p>
+        <div class="boo">
+
+
+        </div>
+    </div>
+
+    <div class="bo2"></div>
+
+</body>
+
+</html>
